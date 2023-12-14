@@ -8,6 +8,11 @@ body {
 
 h1 {
   font-size: 30px;
+  background-color: #333;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

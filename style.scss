@@ -9,7 +9,16 @@ $title :(
   h2 : 38px,
   h3 : 30px
 ); // map
+
+
+$color : #333;
+$color : blue !default;
+
+
+
+
 body {
+   
     font-size: $fontsize;
     margin: $list;
     padding: 0;
@@ -18,5 +27,12 @@ body {
 }
 
 h1 {
-  font-size:map-get($title, h3) ;
+  font-size:map-get($title, h3);
+  background-color: $color;
+}
+
+$class : h4;
+
+#{$class} {
+  font-size:20px;
 }
