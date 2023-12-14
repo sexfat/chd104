@@ -55,7 +55,6 @@ table {
 
 .btn-default {
   display: flex;
-  width: 224px;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -72,19 +71,19 @@ table {
 
 .btn-large {
   display: flex;
-  width: 300px;
   padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #fffb00;
-  color: #fff;
+  border: 2px solid #826500;
+  color: #826500;
   transition: 0.3s all ease;
   cursor: pointer;
   border-radius: 8px;
 }
 .btn-large:hover {
-  background-color: #999700;
+  background-color: #826500;
+  color: #7d9aff;
 }
 
 body {
@@ -133,6 +132,9 @@ footer {
 }
 .index .container h1 {
   font-size: 50px;
+}
+.index .container .large {
+  width: 200px;
 }
 
 .about .container h1 {
