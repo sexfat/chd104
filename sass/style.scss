@@ -44,7 +44,7 @@ body {
 // 取map值 
 h1 {
     font-size: map-get($title, h3);
-    background-color: $color;
+    background-color: $bgcolor;
 }
 
 $class : h4;
@@ -57,34 +57,5 @@ $class : h4;
 .wrapper {
     width: 100%;
 
-    header {
-        display: flex;
 
-        .logo {
-            width: 120px;
-            height: 80px;
-        }
-
-        max-width: 1440px;
-        width: 100%;
-        margin: 0 auto;
-
-        nav {
-            ul {
-                list-style: none;
-                display: flex;
-                li {
-                    min-width: 120px;
-                    a {
-                        color: $link;
-
-                        &:hover {
-                            color: red
-                        }
-                    }
-                    // a:hover {}
-                }
-            }
-        }
-    }
 }
