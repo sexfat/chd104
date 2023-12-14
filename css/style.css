@@ -15,4 +15,25 @@ h4 {
   font-size: 20px;
 }
 
+.wrapper {
+  width: 100%;
+}
+.wrapper header {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper header .logo {
+  width: 120px;
+  height: 80px;
+}
+.wrapper header nav ul {
+  list-style: none;
+  display: flex;
+}
+.wrapper header nav ul li {
+  min-width: 120px;
+}
+
 /*# sourceMappingURL=style.css.map */

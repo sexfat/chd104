@@ -3,12 +3,10 @@ $fontsize : 16px; // 數值
 $bgcolor : #fff; // 顏色
 $fontW: null; //null
 $list : 0px 2px; // list
-$title :(
-  key : value,
-  h1 : 40px,
-  h2 : 38px,
-  h3 : 30px
-); // map
+$title :(key : value,
+    h1 : 40px,
+    h2 : 38px,
+    h3 : 30px); // map
 
 
 $color : #333;
@@ -18,21 +16,50 @@ $color : blue !default;
 
 
 body {
-   
+
     font-size: $fontsize;
     margin: $list;
     padding: 0;
-    background-color:$bgcolor;
+    background-color: $bgcolor;
     font-weight: $fontW;
 }
 
+// 取map值 
 h1 {
-  font-size:map-get($title, h3);
-  background-color: $color;
+    font-size: map-get($title, h3);
+    background-color: $color;
 }
 
 $class : h4;
 
+//轉型
 #{$class} {
-  font-size:20px;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    header {
+        display: flex;
+
+        .logo {
+            width: 120px;
+            height: 80px;
+        }
+
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    min-width: 120px;
+                }
+            }
+        }
+    }
 }
