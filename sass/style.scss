@@ -1,5 +1,35 @@
+//變數
+@import "base/var";
+@import "base/color";
+@import "base/font";
 
-@import "var";
+//函式
+@import "mixin/mixin";
+
+
+//組件
+@import "components/btn";
+@import "components/card";
+@import "components/form";
+@import "components/rwd";
+@import "components/table";
+
+
+//layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/login";
+
+
+//layout
+@import "page/index";
+@import "page/about";
+@import "page/product";
+
+//套件
+@import "plugin/bootstrap";
+// @import "var";
+// @import "var";
 // @import url() 這是css import
 
 body {
