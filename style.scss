@@ -11,7 +11,7 @@ $title :(key : value,
 
 $color : #333;
 $color : blue !default;
-
+$link : #1900ff;
 
 
 
@@ -39,6 +39,7 @@ $class : h4;
 
 .wrapper {
     width: 100%;
+
     header {
         display: flex;
 
@@ -55,9 +56,16 @@ $class : h4;
             ul {
                 list-style: none;
                 display: flex;
-
                 li {
                     min-width: 120px;
+                    a {
+                        color: $link;
+
+                        &:hover {
+                            color: red
+                        }
+                    }
+                    // a:hover {}
                 }
             }
         }
