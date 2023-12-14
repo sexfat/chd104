@@ -1,0 +1,22 @@
+/*var*/
+$fontsize : 16px; // 數值
+$bgcolor : #fff; // 顏色
+$fontW: null; //null
+$list : 0px 2px; // list
+$title :(
+  key : value,
+  h1 : 40px,
+  h2 : 38px,
+  h3 : 30px
+); // map
+body {
+    font-size: $fontsize;
+    margin: $list;
+    padding: 0;
+    background-color:$bgcolor;
+    font-weight: $fontW;
+}
+
+h1 {
+  font-size:map-get($title, h3) ;
+}
