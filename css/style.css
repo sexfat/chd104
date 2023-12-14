@@ -130,4 +130,16 @@ h4 {
   background-color: #fff;
 }
 
+.layout_a {
+  width: 1366px;
+  margin: 0 auto;
+  background-color: #7afaf6;
+}
+
+.layout_b {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #f477ff;
+}
+
 /*# sourceMappingURL=style.css.map */
