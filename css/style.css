@@ -121,24 +121,14 @@ h4 {
   font: 10px;
 }
 
-.full {
-  width: 1200px;
-  margin: auto;
-}
-
-.color {
-  background-color: #fff;
-}
-
 .layout_a {
-  width: 1366px;
-  margin: 0 auto;
+  width: 100%;
   background-color: #7afaf6;
 }
 
 .layout_b {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   background-color: #f477ff;
 }
 

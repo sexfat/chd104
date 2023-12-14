@@ -1,0 +1,20 @@
+
+//====== mixin 宣告
+
+// layout 
+@mixin layout($w){
+    @if $w == 100 {
+        width: 100%;
+     }
+     @else if $w < 100{
+       width: $w  * 1%;
+       margin: auto;
+     }
+     @else if $w >100 and $w <=200 {
+        width: $w  * 1%;
+     }
+     @else {
+        width: $w + px;
+        margin: auto;
+     }
+}

@@ -59,46 +59,42 @@ $class : h4;
 }
 
 
-$w: 1200;
+// $w: 1200;
 
-.full {
-  @if $w == 100 {
-     width: 100%;
-  }
-  @else if $w < 100{
-    width: $w  * 1%;
-    margin: auto;
-  }
-  @else {
-     width: $w + px;
-     margin: auto;
-  }
-}
+// .full {
+//   @if $w == 100 {
+//      width: 100%;
+//   }
+//   @else if $w < 100{
+//     width: $w  * 1%;
+//     margin: auto;
+//   }
+//   @else {
+//      width: $w + px;
+//      margin: auto;
+//   }
+// }
 
 // 顏色
-$color : false;
+// $color : false;
 
-.color {
-   @if $color {
-     color : #333  
-   } 
- background-color: #fff; 
-}
+// .color {
+//    @if $color {
+//      color : #333  
+//    } 
+//  background-color: #fff; 
+// }
 
-// mixin 宣告
-@mixin layout($w){
-    width: $w;
-    margin: 0 auto;
-}
+
 
 
 .layout_a {
-  @include layout(1366px);
+  @include layout(100);
   background-color: #7afaf6;
 }
 
 .layout_b {
-  @include layout(1200px);
+  @include layout(1200);
   background-color: #f477ff;
 
 }
