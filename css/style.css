@@ -53,6 +53,40 @@ table {
   border-spacing: 0;
 }
 
+.btn-default {
+  display: flex;
+  width: 224px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ee2000;
+  color: #fff;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.btn-default:hover {
+  background-color: #881200;
+}
+
+.btn-large {
+  display: flex;
+  width: 300px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fffb00;
+  color: #fff;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.btn-large:hover {
+  background-color: #999700;
+}
+
 body {
   font-size: 16px;
   margin: 0px 2px;

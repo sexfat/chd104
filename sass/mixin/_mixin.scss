@@ -1,20 +1,48 @@
-
 //====== mixin 宣告
 
 // layout 
-@mixin layout($w){
-    @if $w == 100 {
+@mixin layout($w) {
+    @if $w==100 {
         width: 100%;
-     }
-     @else if $w < 100{
-       width: $w  * 1%;
-       margin: auto;
-     }
-     @else if $w >100 and $w <=200 {
-        width: $w  * 1%;
-     }
-     @else {
+    }
+
+    @else if $w < 100 {
+        width: $w * 1%;
+        margin: auto;
+    }
+
+    @else if $w>100 and $w <=200 {
+        width: $w * 1%;
+    }
+
+    @else {
         width: $w + px;
         margin: auto;
-     }
+    }
 }
+
+
+@mixin btn($class, $color, $bgc , $w:224) {
+    .btn-#{$class} {
+        display: flex;
+        width: $w+px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: $bgc;
+        color: $color;
+        transition: .3s all ease;
+        cursor: pointer;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: darken($bgc, 20);
+        }
+    }
+}
+
+
+    @include btn(default, #fff, #ee2000 );
+    @include btn(large, #fff, #fffb00 , 300 )
+
