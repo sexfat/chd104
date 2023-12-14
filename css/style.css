@@ -133,7 +133,7 @@ footer {
 .index .container h1 {
   font-size: 50px;
 }
-@media all and (max-width: 576px) {
+@media all and (max-width: 720px) {
   .index .container h1 {
     font-size: 100px;
     color: red;
@@ -142,13 +142,13 @@ footer {
 .index .container .large {
   width: 500px;
 }
-@media all and (max-width: 998px) {
+@media all and (max-width: 1024px) {
   .index .container .large {
     width: 80%;
     margin: 0 auto;
   }
 }
-@media all and (max-width: 576px) {
+@media all and (max-width: 720px) {
   .index .container .large {
     width: 100%;
   }
