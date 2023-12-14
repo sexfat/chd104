@@ -3,6 +3,7 @@
 @import "base/var";
 @import "base/color";
 @import "base/font";
+@import "base/reset";
 
 //函式
 @import "mixin/mixin";
@@ -39,7 +40,6 @@
 // 取map值 
 h1 {
     font-size: map-get($title, h3);
-    background-color: $bgcolor;
 }
 
 $class : h4;
@@ -57,7 +57,7 @@ $class : h4;
   //新sass math (運算)規範
   font : math.div(100 , 10) + px
 }
-$w: 996;
+$w: 1200;
 
 .full {
   @if $w == 100 {
@@ -71,6 +71,15 @@ $w: 996;
      width: $w + px;
      margin: auto;
   }
+}
+
+$color : false;
+
+.color {
+   @if $color {
+     color : #333  
+   } 
+ background-color: #fff; 
 }
 
 
