@@ -25,11 +25,11 @@
 @mixin btn($class, $color, $bgc:null) {
     .btn-#{$class} {
         display: flex;
-        // width: $w+px;
         padding: 10px;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
+
         @if $bgc {
             background-color: $bgc;
             color: $color;
@@ -42,15 +42,41 @@
         @else {
             border: 2px solid $color;
             color: $color;
+
             &:hover {
                 background-color: $color;
-                color:invert($color)
+                color: invert($color)
             }
         }
+
         transition: .3s all ease;
         cursor: pointer;
         border-radius: 8px;
     }
 }
 
+// ====   rwd ===== //
+// @media all and (min-width: $t) {
+//   //平版
+// }
+
+// @media all and (min-width: $m) {
+//     //手機
+
+//   }
+
+@mixin t() {
+    @media all and (max-width: $t) {
+        //平版
+        @content;
+    }
+}
+
+
+@mixin m() {
+    @media all and (max-width: $m) {
+        //平版
+        @content;
+    }
+}
 
