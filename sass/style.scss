@@ -130,24 +130,45 @@ body {
   }
 }
 
-@mixin grid($col) {
-  @for $i from 1 through $col {
-    .col-#{$i} {
-      width: ($i / $col) * 100%;
-    }
+// @mixin grid($col) {
+//   @for $i from 1 through $col {
+//     .col-#{$i} {
+//       width: ($i / $col) * 100%;
+//     }
 
-    @include t() {
-      .col-md-#{$i} {
+//     @include t() {
+//       .col-md-#{$i} {
+//         width: ($i / $col) * 100%;
+//       }
+
+//       @include m() {
+//         .col-sm-#{$i} {
+//           width: ($i / $col) * 100%;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+@mixin grid($col, $b:null) {
+  @for $i from 1 through $col {
+    @if $b==null {
+      .col-#{$i} {
         width: ($i / $col) * 100%;
       }
+    }
 
-      @include m() {
-        .col-sm-#{$i} {
-          width: ($i / $col) * 100%;
-        }
+    @else {
+      .col-#{$b}-#{$i} {
+        width: ($i / $col) * 100%;
       }
     }
   }
 }
+
+
+
 
 @include grid(12);
