@@ -16,6 +16,7 @@
 @import "components/form";
 @import "components/rwd";
 @import "components/table";
+@import "components/grid";
 
 
 //layout
@@ -39,23 +40,23 @@
 
 // 取map值 
 h1 {
-    font-size: map-get($title, h3);
+  font-size: map-get($title, h3);
 }
 
 $class : h4;
 
 //轉型
 #{$class} {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 
 .a {
-  width: 10 + 10px ;
-  height:  100px - 10px;
-  margin:  100 * 10;
+  width: 10 + 10px;
+  height: 100px - 10px;
+  margin: 100 * 10;
   //新sass math (運算)規範
-  font : math.div(100 , 10) + px
+  font: math.div(100, 10) + px
 }
 
 
@@ -103,27 +104,50 @@ $class : h4;
 
 body {
   font-size: 20px;
- 
-  @include t(){
+
+  @include t() {
     font-size: 60px;
     color: red
   }
-  @include m(){
+
+  @include m() {
     font-size: 40px;
-    color:green
+    color: green
   }
 }
 
 
 
 @for $i from 10 through 5 {
-   .box-#{$i} {
+  .box-#{$i} {
     margin-top: $i + px;
-   }
+  }
 }
 
 @for $i from 1 through 10 {
-   .spacing-#{$i}{
-     margin-top: $i * 8px;
-   }
+  .spacing-#{$i} {
+    margin-top: $i * 8px;
+  }
 }
+
+@mixin grid($col) {
+  @for $i from 1 through $col {
+    .col-#{$i} {
+      width: ($i / $col) * 100%;
+    }
+
+    @include t() {
+      .col-md-#{$i} {
+        width: ($i / $col) * 100%;
+      }
+
+      @include m() {
+        .col-sm-#{$i} {
+          width: ($i / $col) * 100%;
+        }
+      }
+    }
+  }
+}
+
+@include grid(12);
