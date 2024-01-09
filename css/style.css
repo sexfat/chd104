@@ -19,8 +19,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -121,6 +119,10 @@ header nav ul li a {
 header nav ul li a:hover {
   color: red;
 }
+header .btn-default {
+  position: relative;
+  left: 100px;
+}
 
 footer {
   width: 100%;
@@ -133,7 +135,7 @@ footer {
 .index .container h1 {
   font-size: 50px;
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 576px) {
   .index .container h1 {
     font-size: 100px;
     color: red;
@@ -148,7 +150,7 @@ footer {
     margin: 0 auto;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 576px) {
   .index .container .large {
     width: 100%;
   }
@@ -185,4 +187,82 @@ h4 {
   background-color: #f477ff;
 }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-size: 20px;
+}
+@media all and (max-width: 1024px) {
+  body {
+    font-size: 60px;
+    color: red;
+  }
+}
+@media all and (max-width: 576px) {
+  body {
+    font-size: 40px;
+    color: green;
+  }
+}
+
+.box-10 {
+  margin-top: 10px;
+}
+
+.box-9 {
+  margin-top: 9px;
+}
+
+.box-8 {
+  margin-top: 8px;
+}
+
+.box-7 {
+  margin-top: 7px;
+}
+
+.box-6 {
+  margin-top: 6px;
+}
+
+.box-5 {
+  margin-top: 5px;
+}
+
+.spacing-1 {
+  margin-top: 8px;
+}
+
+.spacing-2 {
+  margin-top: 16px;
+}
+
+.spacing-3 {
+  margin-top: 24px;
+}
+
+.spacing-4 {
+  margin-top: 32px;
+}
+
+.spacing-5 {
+  margin-top: 40px;
+}
+
+.spacing-6 {
+  margin-top: 48px;
+}
+
+.spacing-7 {
+  margin-top: 56px;
+}
+
+.spacing-8 {
+  margin-top: 64px;
+}
+
+.spacing-9 {
+  margin-top: 72px;
+}
+
+.spacing-10 {
+  margin-top: 80px;
+}/*# sourceMappingURL=style.css.map */

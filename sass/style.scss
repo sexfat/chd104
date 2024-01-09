@@ -101,4 +101,29 @@ $class : h4;
 
 
 
+body {
+  font-size: 20px;
+ 
+  @include t(){
+    font-size: 60px;
+    color: red
+  }
+  @include m(){
+    font-size: 40px;
+    color:green
+  }
+}
 
+
+
+@for $i from 10 through 5 {
+   .box-#{$i} {
+    margin-top: $i + px;
+   }
+}
+
+@for $i from 1 through 10 {
+   .spacing-#{$i}{
+     margin-top: $i * 8px;
+   }
+}

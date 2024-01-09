@@ -15,8 +15,10 @@ header {
         ul {
             list-style: none;
             display: flex;
+
             li {
                 min-width: 120px;
+
                 a {
                     color: $link;
 
@@ -24,8 +26,15 @@ header {
                         color: red
                     }
                 }
+
                 // a:hover {}
             }
         }
     }
+
+    .btn-default {
+        position: relative;
+        left: 100px
+    }
+
 }
