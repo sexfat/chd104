@@ -150,16 +150,41 @@ body {
 //   }
 // }
 
-$img : a1 a2 a3 a4 a5 a6 b1 b2;
 
-@each $i in $img {
- .img_#{$i} {
-  background-image: url('images/#{$i}.jpg');
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
- }
+@mixin img($img) {
+  @each $i in $img {
+    .img_#{$i} {
+      background-image: url('images/#{$i}.jpg');
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
+
+@include img(a1 a2 a3);
+
+
+@each $k , $v in $title {
+  #{$k}{
+     font-size: $v;
+     font-weight: bold;
+  }
+}
+
+
+@each $k , $v in $bgc {
+  .#{$k}-bg {
+     background-color: $v;
+  }
+}
+
+
+
+
+
+
+
 
 
 

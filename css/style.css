@@ -517,37 +517,43 @@ body {
   background-size: cover;
 }
 
-.img_a4 {
-  background-image: url("images/a4.jpg");
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+h1 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
-.img_a5 {
-  background-image: url("images/a5.jpg");
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+h2 {
+  font-size: 38px;
+  font-weight: bold;
 }
 
-.img_a6 {
-  background-image: url("images/a6.jpg");
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+h3 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.img_b1 {
-  background-image: url("images/b1.jpg");
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+h4 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.img_b2 {
-  background-image: url("images/b2.jpg");
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.primary-bg {
+  background-color: #7367f0;
+}
+
+.secondary-bg {
+  background-color: #a8aaae;
+}
+
+.success-bg {
+  background-color: #3cdc18;
+}
+
+.info-bg {
+  background-color: #001aff;
 }/*# sourceMappingURL=style.css.map */

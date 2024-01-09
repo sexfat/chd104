@@ -3,10 +3,13 @@ $fontsize : 16px; // 數值
 $bgcolor : #fff; // 顏色
 $fontW: null; //null
 $list : 0px 2px; // list
-$title :(key : value,
+$title :(
     h1 : 40px,
     h2 : 38px,
-    h3 : 30px); // map
+    h3 : 30px,
+    h4 : 25px,
+    h5: 18px
+    ); // map
 
 
 // $color : #333;
