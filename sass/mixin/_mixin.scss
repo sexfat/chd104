@@ -99,3 +99,21 @@
 //   @include btn-default(#333,1px solid #666 , yellow)
 // }
 
+
+
+@mixin grid($col, $b:null) {
+    @for $i from 1 through $col {
+      @if $b==null {
+        .col-#{$i} {
+          width: ($i / $col) * 100%;
+        }
+      }
+  
+      @else {
+        .col-#{$b}-#{$i} {
+          width: ($i / $col) * 100%;
+        }
+      }
+    }
+  }
+  
